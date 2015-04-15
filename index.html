@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Grunt-buddha by creeperyang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Grunt-buddha</h1>
+      <h2 class="project-tagline">Buddha&#39;s grace illuminates code as sunshine</h2>
+      <a href="https://github.com/creeperyang/grunt-buddha" class="btn">View on GitHub</a>
+      <a href="https://github.com/creeperyang/grunt-buddha/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/creeperyang/grunt-buddha/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="grunt-buddha-creeper" class="anchor" href="#grunt-buddha-creeper" aria-hidden="true"><span class="octicon octicon-link"></span></a>grunt-buddha-creeper</h1>
+
+<blockquote>
+<p>Buddha\'s grace illuminates code as sunshine</p>
+</blockquote>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>This plugin requires Grunt.</p>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<div class="highlight highlight-shell"><pre>npm install grunt-buddha-creeper --save-dev</pre></div>
+
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+
+<div class="highlight highlight-js"><pre>grunt.loadNpmTasks(<span class="pl-s"><span class="pl-pds">'</span>grunt-buddha-creeper<span class="pl-pds">'</span></span>);</pre></div>
+
+<h2>
+<a id="the-buddha-task" class="anchor" href="#the-buddha-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>The "buddha" task</h2>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>In your project's Gruntfile, add a section named <code>buddha</code> to the data object passed into <code>grunt.initConfig()</code>.</p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  buddha<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      <span class="pl-c">// Task-specific options go here.</span>
+    },
+    your_target<span class="pl-k">:</span> {
+      <span class="pl-c">// Target-specific file lists and/or options go here.</span>
+    },
+  },
+})</pre></div>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<h4>
+<a id="optionswho" class="anchor" href="#optionswho" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.who</h4>
+
+<p>Type: <code>String</code>
+Default value: <code>buddha</code></p>
+
+<p>A string value that is used to specify who blesses code.</p>
+
+<p>指明佛祖还是神兽保佑代码。</p>
+
+<h4>
+<a id="optionscommentsymbol" class="anchor" href="#optionscommentsymbol" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.commentSymbol</h4>
+
+<p>Type: <code>String</code>
+Default value: <code>//</code></p>
+
+<p>A string value that is used to specify comment symbol.</p>
+
+<p>文件中拼接神兽或佛祖时使用的注释符。</p>
+
+<h3>
+<a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Examples</h3>
+
+<h4>
+<a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options</h4>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  buddha<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      <span class="pl-s"><span class="pl-pds">'</span>who<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>buddha<span class="pl-pds">'</span></span>,
+      <span class="pl-s"><span class="pl-pds">'</span>commentSymbol<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>//<span class="pl-pds">'</span></span>
+    },
+    dist<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>examples/*.js<span class="pl-pds">'</span></span>]
+  },
+})</pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+<h2>
+<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<p>2015-04-15   v0.0.1    init</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2015 creeperyang. Licensed under the MIT license.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/creeperyang/grunt-buddha">Grunt-buddha</a> is maintained by <a href="https://github.com/creeperyang">creeperyang</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
